@@ -15,24 +15,24 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Square = void 0;
+exports.Circle = void 0;
 var Shape_1 = require("./Shape");
-var Square = /** @class */ (function (_super) {
-    __extends(Square, _super);
-    function Square(color, filled, side) {
+var Circle = /** @class */ (function (_super) {
+    __extends(Circle, _super);
+    function Circle(color, filled, radius) {
         var _this = _super.call(this, color, filled) || this;
-        _this.side = side;
+        _this.radius = radius;
         return _this;
     }
-    Square.prototype.getArea = function () {
-        return this.side * this.side;
+    Circle.prototype.getArea = function () {
+        return Math.PI * this.radius * this.radius;
     };
-    Square.prototype.getPerimeter = function () {
-        return 4 * this.side;
+    Circle.prototype.getPerimeter = function () {
+        return 2 * this.radius * Math.PI;
     };
-    Square.prototype.resize = function (a) {
-        this.side = this.side * a;
+    Circle.prototype.resize = function (a) {
+        this.radius = this.radius * a;
     };
-    return Square;
+    return Circle;
 }(Shape_1.Shape));
-exports.Square = Square;
+exports.Circle = Circle;
