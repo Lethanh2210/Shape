@@ -16,3 +16,8 @@ for (let i = 0; i < shape.shapes.length; i++) {
     shape.shapes[i].resize(randomNumber());
 }
 console.log(shape.shapes);
+for (let i = 0; i < shape.shapes.length; i++) {
+    if(shape.shapes[i] === square){
+        shape.shapes[i].howToColor();
+    }
+}

@@ -33,6 +33,9 @@ var Square = /** @class */ (function (_super) {
     Square.prototype.resize = function (a) {
         this.side = this.side * a;
     };
+    Square.prototype.howToColor = function () {
+        console.log("Color all four sides");
+    };
     return Square;
 }(Shape_1.Shape));
 exports.Square = Square;
